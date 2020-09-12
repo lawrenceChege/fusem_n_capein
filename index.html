@@ -1,61 +1,400 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="">
     <!-- Custom css  -->
     <link rel="stylesheet" href="/assets/css/main.css" crossorigin="anonymous">
 
     <!-- custom javascript  -->
     <script src="/assets//js/main.js"></script>
-    
-    <title>FUSEM & CAPEIN</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">FUSEM & CAPEIN</a>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1">About</a>
-            </li>
-          </ul>
-          <div class="my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="OpenLogin()">Login</button>
-            <button class="btn btn-success my-2 my-sm-0" type="submit" onclick="OpenSignup()">Sign Up</button>
-          </form>
-        </div>
-      </nav>
-    <div class="container">
-        <!-- Content here -->
-      </div>
 
-    <!-- Optional JavaScript -->
+    <title>FUSEM & CAPEIN</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/socicon/css/socicon.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light mbr-navbar navbar-fixed-top" id="ext_menu-b" data-rv-view="144"
+        style="background-color: rgb(255, 255, 255);">
+        <div class="container">
+            <button class="navbar-toggler pull-right hidden-md-up" type="button" data-toggle="collapse"
+                data-target="#exCollapsingNavbar2">
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <div class="clearfix"></div>
+            <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+                <span class="navbar-logo"><a href="#"><img src="assets/images/logo.png" </a> </span> <span><a
+                            class="navbar-brand" href="#">FUSEM & CAPEIN</a></span>
+
+                <ul class="nav navbar-nav pull-xs-right">
+                    <li class="nav-item"><a class="btn btn-secondary-outline" href="/pages/SignUp.html">Sign Up</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav pull-xs-right">
+                    <li class="nav-item"><a class="nav-link" href="/pages/Login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header4-c"
+        data-rv-view="146" style="background-image: url(assets/images/photo-2.jpg);">
+        <div class="mbr-table-cell">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <h1 class="mbr-section-title display-1">Assuring the future</h1>
+
+                        <div class="mbr-buttons--left">
+                            <a class="btn btn-lg btn-warning" href="#">About Us</a>
+                            <a class="btn btn-lg btn-white" href="#">Contact Us</a></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- <div class="card bg-primary text-center card-form">
+                        <div class="card-body">
+                            <h3>Sign Up Now</h3>
+                            <p>Kindly Fill Out this Form</p>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-lg" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control form-control-lg" placeholder="Confirm Password">
+                                </div>
+                                <input type="submit" value="Submit" class="btn btn-outline-dark btn-block">
+                            </form>
+                        </div>
+                    </div> -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section-nopadding" id="msg-box4-d" data-rv-view="149"
+        style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-lg-3 mbr-inner-padding text-xs-center mbr-table-cell-lg">
+                    <h3 class="mbr-section-title display-4">Our goal and mission</h3>
+
+                    <div class="lead">
+                        <p>Esuring that we will be there on the rainy day</p>
+                    </div>
+                    <div><a class="btn btn-lg btn-secondary-outline" href="#">More</a></div>
+                </div>
+                <div class="col-xs-12 col-lg-9 mbr-table-cell-lg image-size" style="width: 50%;">
+                    <div class="mbr-figure"><img src="assets/images/umbrella.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section-small" id="features1-e" data-rv-view="152"
+        style="background-color: rgb(255, 255, 255); padding-top: 4.5rem; padding-bottom: 4.5rem;">
+
+        <div class="container">
+            <div class="lead">
+                <p>What we offer</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card cart-block">
+                        <div><img src="assets/images/premiums.png" class="card-img-top" style="height: 200px;"></div>
+                        <div class="card-block">
+                            <h4 class="card-title text-xs-center">Affordable Premiums</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card cart-block">
+                        <div><img src="assets/images/diverity.png" class="card-img-top" style="height: 200px;"></div>
+                        <div class="card-block">
+                            <h4 class="card-title text-xs-center">Diversity in products</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card cart-block">
+                        <div><img src="assets/images/transparent.png" class="card-img-top" style="height: 200px;"></div>
+                        <div class="card-block">
+                            <h4 class="card-title text-xs-center">Transparency in transactions</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card cart-block">
+                        <div><img src="assets/images/singleclick.png" class="card-img-top" style="height: 200px;"></div>
+                        <div class="card-block">
+                            <h4 class="card-title text-xs-center">Single click appointment booking</h4>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mbr-section mbr-parallax-background col-undefined" id="content5-g" data-rv-view="158"
+        style="background-image: url(assets/images/photo-3.jpg); padding-top: 9rem; padding-bottom: 9rem;">
+        <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+        <div class="container">
+            <h3 class="mbr-section-title display-2">When you work with us ...</h3>
+            <div class="lead">
+                <p>Lorem ipsum dolor sit amet, eos lorem consul ne, quo ex suscipit consequat. Laudem expetenda vis in.
+                    Posse noster oporteat no vix, mel quas homero cu. Argumentum efficiantur ullamcorper ad qui. Populo
+                    liberavisse mel at. Alii conclusionemque at mea, senserit reformidans has cu. Ea dicat detracto vim,
+                    fugit copiosae ex nec. Est te summo equidem, mea ex munere epicurei qualisque</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section__container mbr-section__container--isolated" id="buttons1-i"
+        data-rv-view="163">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="text-xs-center">
+                        <a class="btn btn-lg btn-danger" href="/pages/SignUp.html">Sign Up</a>
+                        <a class="btn btn-lg btn-secondary-outline" href="/pages/Login.html">Login</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section-small" id="msg-box1-j" data-rv-view="164"
+        style="background-color: rgb(255, 248, 224); padding-top: 4.5rem; padding-bottom: 4.5rem;">
+
+
+        <div class="container">
+            <div class="row">
+
+                <div>
+
+                    <div class="col-sm-8">
+                        <h2 class="mbr-section-title h1">We work with a diverse variety of facilities</h2>
+
+                    </div>
+                    <div class="col-sm-4 text-xs-right">
+                        <a class="btn btn-lg btn-danger" href="#">See Facilities</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section-small" id="testimonials1-k" data-rv-view="167"
+        style="background-color: rgb(255, 255, 255); padding-top: 4.5rem; padding-bottom: 4.5rem;">
+        <div>
+
+            <div class="container">
+                <h2 class="mbr-section-title display-3 text-xs-center">Our Different Products</h2>
+
+                <div class="row mbr-testimonial-cards">
+                        <!-- ============================================================== -->
+                        <!-- product category  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card center-plans">
+                                <h5 class="card-header"> Silver Plans</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart-category ct-golden-section" style="height: 100%;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/assets/images/single_moms.png" class="card-img-top"
+                                                alt="single moms" style="height: 200px;">
+                                            <div class="card-body">
+                                                <h5 class="card-block">Specially Designed for Single moms</h5>
+                                                <p class="card-footer">Monthly Premiums of R2000</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <button class="btn btn-outline-success card-link">View Details</button>
+                                                <button class="btn btn-outline-success card-link"> Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card center-plans">
+                                <h5 class="card-header"> Bronze Plan</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart-category ct-golden-section" style="height: 100%;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/assets/images/family.png" class="card-img-top" alt="family"
+                                                style="height: 200px;">
+                                            <div class="card-body">
+                                                <h5 class="card-block">Specially Designed for your Family</h5>
+                                                <p class="card-footer">Monthly Premiums of R5000</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <button class="btn btn-outline-warning card-link">View Details</button>
+                                                <button class="btn btn-warning card-link"> Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end product category  -->
+                        <!-- product sales  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="card center-plans">
+                                <h5 class="card-header"> Gold Plan</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart-category ct-golden-section" style="height: 100%;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/assets/images/group.png" class="card-img-top" alt="family"
+                                                style="height: 200px;">
+                                            <div class="card-body">
+                                                <h5 class="card-block">Designed for groups and organizations</h5>
+                                                <p class="card-footer">Monthly Premiums of R4000</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <button class="btn btn-outline-primary card-link">View Details</button>
+                                                <button class="btn btn-outline-primary card-link"> Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section-small" id="social-buttons2-l" data-rv-view="176"
+        style="background-color: rgb(255, 248, 224); padding-top: 4.5rem; padding-bottom: 4.5rem;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h2 class="mbr-section-title h1">Follow Us</h2>
+                </div>
+                <div class="col-sm-8 text-xs-right">
+                    <a class="btn btn-social socicon-bg-twitter" title="Twitter" target="_blank" href="#">
+                        <i class="socicon socicon-twitter"></i></a>
+
+                    <a class="btn btn-social socicon-bg-facebook" title="Facebook" target="_blank" href="#"><i
+                            class="socicon socicon-facebook"></i></a>
+
+                    <a class="btn btn-social socicon-bg-google" title="Google+" target="_blank" href="#">
+                        <i class="socicon socicon-google"></i></a>
+
+                    <a class="btn btn-social socicon-bg-youtube" title="YouTube" target="_blank" href="#">
+                        <i class="socicon socicon-youtube"></i></a>
+
+                    <a class="btn btn-social socicon-bg-instagram" title="Instagram" target="_blank" href="#">
+                        <i class="socicon socicon-instagram"></i></a>
+
+                    <a class="btn btn-social socicon-bg-pinterest" title="Pinterest" target="_blank" href="#">
+                        <i class="socicon socicon-pinterest"></i></a>
+
+                    <a class="btn btn-social socicon-bg-tumblr" title="Tumblr" target="_blank" href="#">
+                        <i class="socicon socicon-tumblr"></i></a>
+                    <a class="btn btn-social socicon-bg-linkedin" title="LinkedIn" target="_blank" href="#">
+                        <i class="socicon socicon-linkedin"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section mbr-section-small mbr-footer" id="contacts1-m" data-rv-view="178"
+        style="background-color: rgb(55, 56, 62); padding-top: 4.5rem; padding-bottom: 4.5rem;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <div><img src="assets/images/footer-logo.png"></div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p><strong>Address</strong><br>
+                        1234 Street Name<br>
+                        City, AA 99999</p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <p><strong>Contacts</strong><br>
+                        Email: darealseun@gmail.com<br>
+                        Phone: +234 (0) 000 0000 001<br>
+                        Fax: +234 (0) 000 0000 002</p>
+                </div>
+                <div class="col-xs-12 col-md-3"><strong>Links</strong>
+                    <ul>
+                        <li><a href="#">Website builder</a></li>
+                        <li><a href="#">Download for Windows</a></li>
+                        <li><a href="#">Download for Mac</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mbr-section mbr-section-nopadding mbr-footer" id="footer1-n" data-rv-view="180"
+        style="background-color: rgb(38, 39, 44); padding-top: 3rem; padding-bottom: 1.98rem;">
+
+        <div class="container">
+            
+            <p>Copyright © 2020 FUSEM & CAPEIN <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
     <script>
         const OpenSignup = () => {
-            window.location.assign("/pages/SignUp.html");
+            window.location.assign("pages/SignUp.html");
         }
         const OpenLogin = () => {
-            window.location.assign("/pages/Login.html");
+            window.location.assign("pages/Login.html");
         }
     </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
 </html>
