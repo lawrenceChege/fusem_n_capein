@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    
+
+    <link rel="stylesheet" href="/assets/fonts/fontawesome/css/fontawesome-all.css">
+    <link href="/assets/css/circular.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/libs.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/chartlist.css">
+    <link rel="stylesheet" href="/assets/css/morris.css">
+    <link rel="stylesheet" href="/assets/css/material-icons.css">
+    <link rel="stylesheet" href="/assets/css/charts.css">
+    <link rel="stylesheet" href="/assets/css/flagicon.css">
+    <title>FUSEM & CAPEIN | Dashboard </title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">FUSEM & CAPEIN </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                                    class="indicator"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-2.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Reminder</span> Your
+                                                        premium is due in one week
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-3.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Payment </span> Payment
+                                                        of R2000 has been made
+                                                        <div class="notification-date">2 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-4.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Debited</span> R200 paid
+                                                        to Fitz Hospital
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-5.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span
+                                                            class="notification-list-user-name">Reminder</span> Your
+                                                        premium is past due
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="/index.html" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
+                                    class="fas fa-fw fa-th"></i> Logout</a>
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="/pages/Profile.html"><i
+                                        class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#"><i class="fa fa-fw fa-user-circle"></i>Dashboard
+                                    <span class="badge badge-success">6</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ClinicalHistory"><i class="fa fa-fw fa-rocket"></i>Clinical
+                                    History</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#MedicalPlans"><i class="fas fa-fw fa-chart-pie"></i>Medical
+                                    Plans</a>
+
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#PremiumHistory"><i class="fab fa-fw fa-wpforms"></i>Premium
+                                    History</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#BookAppointment"><i
+                                        class="fas fa-fw fa-table"></i>Appointment</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#PremiumPayment"><i class="fas fa-fw fa-file"></i> Premium
+                                    Payment</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    </li>
+                    </ul>
+            </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+            <div class="container-fluid dashboard-content ">
+                <!-- ============================================================== -->
+                <!-- pageheader  -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h2 class="pageheader-title">FUSEM & CAPEIN Dashboard</h2>
+                            <p class="pageheader-text"></p>
+                            <div class="page-breadcrumb">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">FUSEM & CAPEIN</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader  -->
+                <!-- ============================================================== -->
+                <div class="ecommerce-widget">
+
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Outpatient balance</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">$12099</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
+                                    </div>
+                                </div>
+                                <div id="sparkline-revenue"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Inpatient balance</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">$12099</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
+                                    </div>
+                                </div>
+                                <div id="sparkline-revenue"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Dental balance</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">$12099</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <span><i class="fa fa-fw fa-arrow-up"></i></span><span>5.86%</span>
+                                    </div>
+                                </div>
+                                <div id="sparkline-revenue2"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Optical balance</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">0.00</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-primary font-weight-bold">
+                                        <span>N/A</span>
+                                    </div>
+                                </div>
+                                <div id="sparkline-revenue3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ============================================================== -->
+
+                        <!-- ============================================================== -->
+
+                        <!-- recent orders  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12" id="ClinicalHistory">
+                            <div class="card">
+                                <h5 class="card-header">Clinical History</h5>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="bg-light">
+                                                <tr class="border-0">
+                                                    <th class="border-0">#</th>
+                                                    <th class="border-0">Client Name</th>
+                                                    <th class="border-0">Service</th>
+                                                    <th class="border-0">Facility</th>
+                                                    <th class="border-0">Cost</th>
+                                                    <th class="border-0">Description</th>
+                                                    <th class="border-0">Date</th>
+                                                    <th class="border-0">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Joseph Mkhonto </td>
+                                                    <td>Dental Checkup</td>
+                                                    <td>Yeboah Hospital</td>
+                                                    <td>$80.00</td>
+                                                    <td>Dental checkup and teeth cleaning</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Completed
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Joseph Mkhonto </td>
+                                                    <td>Optical Checkup</td>
+                                                    <td>Emanuel Eye clinic</td>
+                                                    <td>$80.00</td>
+                                                    <td>Eye checkup and eye drops</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Completed
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Joseph Mkhonto </td>
+                                                    <td>Outpatient</td>
+                                                    <td>Yeboah Hospital</td>
+                                                    <td>$0.00</td>
+                                                    <td>Out patient</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-brand mr-1"></span>Rescheduled</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Joseph Mkhonto </td>
+                                                    <td>Dental Checkup</td>
+                                                    <td>Yeboah Hospital</td>
+                                                    <td>$80.00</td>
+                                                    <td>Dental checkup and teeth cleaning</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Completed
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Francis Mkhonto </td>
+                                                    <td>Outpatient</td>
+                                                    <td>Yeboah Hospital</td>
+                                                    <td>$0.00</td>
+                                                    <td>Out patient</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-brand mr-1"></span>Rescheduled</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Joseph Mkhonto </td>
+                                                    <td>Dental Checkup</td>
+                                                    <td>Yeboah Hospital</td>
+                                                    <td>$80.00</td>
+                                                    <td>Dental checkup and teeth cleaning</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-danger mr-1"></span>Cancelled </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Susan Mkhonto </td>
+                                                    <td>Outpatient</td>
+                                                    <td>Yeboah Hospital</td>
+                                                    <td>$0.00</td>
+                                                    <td>Out patient</td>
+                                                    <td>27-08-2018 01:22:12</td>
+                                                    <td><span class="badge-dot badge-success mr-1"></span>Completed</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="9"><a href="#"
+                                                            class="btn btn-outline-light float-right">View Details</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end recent orders  -->
+
+
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- customer acquistion  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <h5 class="card-header">Total Premiums Paid</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart ct-golden-section" ">
+                                        <img src="/assets/images/premiums.png" class="card-img-top" alt="single moms">
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">$540000</h1>
+                                        </div>
+                                        <div
+                                            class="metric-label d-inline-block float-right text-primary font-weight-bold">
+                                            <span>Fully Settled</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end customer acquistion  -->
+                        <!-- ============================================================== -->
+                    </div>
+                    <div class="row">
+                        <h2 class="">Medical Plans</h2>
+                    </div>
+                    <div class="row" id="MedicalPlans">
+                        <!-- ============================================================== -->
+                        <!-- product category  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card center-plans">
+                                <h5 class="card-header"> Silver Plans</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart-category ct-golden-section" style="height: 100%;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/assets/images/single_moms.png" class="card-img-top"
+                                                alt="single moms" style="height: 200px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Specially Designed for Single moms</h5>
+                                                <p class="card-text">Monthly Premiums of <em>R2000</em></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <button class="btn btn-outline-success card-link">View Details</button>
+                                                <button class="btn btn-outline-success card-link"> Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card center-plans">
+                                <h5 class="card-header"> Bronze Plan</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart-category ct-golden-section" style="height: 100%;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/assets/images/family.png" class="card-img-top" alt="family"
+                                                style="height: 200px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Specially Designed for your Family</h5>
+                                                <p class="card-text">Monthly Premiums of <em>R5000</em></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <button class="btn btn-outline-warning card-link">View Details</button>
+                                                <button class="btn btn-warning card-link"> Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end product category  -->
+                        <!-- product sales  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card center-plans">
+                                <h5 class="card-header"> Gold Plan</h5>
+                                <div class="card-body">
+                                    <div class="ct-chart-category ct-golden-section" style="height: 100%;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="/assets/images/group.png" class="card-img-top" alt="family"
+                                                style="height: 200px;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Designed for groups and organizations</h5>
+                                                <p class="card-text">Monthly Premiums of <em>R4000</em></p>
+                                            </div>
+                                            <div class="card-body">
+                                                <button class="btn btn-outline-primary card-link">View Details</button>
+                                                <button class="btn btn-outline-primary card-link"> Choose Plan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end product sales  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-12 col-md-6 col-sm-12 col-12" id="PremiumHistory">
+                            <!-- ============================================================== -->
+                            <!-- top perfomimg  -->
+                            <!-- ============================================================== -->
+                            <div class="card">
+                                <h5 class="card-header">Premium History</h5>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table no-wrap p-table">
+                                            <thead class="bg-light">
+                                                <tr class="border-0">
+                                                    <th class="border-0">Name</th>
+                                                    <th class="border-0">Plan</th>
+                                                    <th class="border-0">Amount</th>
+                                                    <th class="border-0">Date</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Joseph Mkhonto</td>
+                                                    <td>Bronze</td>
+                                                    <td>$456</td>
+                                                    <td>27-08-2018 01:22:12</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Joseph Mkhonto</td>
+                                                    <td>Bronze</td>
+                                                    <td>$456</td>
+                                                    <td>27-08-2018 01:22:12</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Joseph Mkhonto</td>
+                                                    <td>Bronze</td>
+                                                    <td>$456</td>
+                                                    <td>27-08-2018 01:22:12</td>
+
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td>Joseph Mkhonto</td>
+                                                    <td>Bronze</td>
+                                                    <td>$456</td>
+                                                    <td>27-08-2018 01:22:12</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Joseph Mkhonto</td>
+                                                    <td>Bronze</td>
+                                                    <td>$456</td>
+                                                    <td>27-08-2018 01:22:12</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>Joseph Mkhonto</td>
+                                                    <td>Bronze</td>
+                                                    <td>$456</td>
+                                                    <td>27-08-2018 01:22:12</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <a href="#"
+                                                            class="btn btn-outline-light float-right">Details</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end top perfomimg  -->
+                            <!-- ============================================================== -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Appointments </h2>
+                    </div>
+
+                    <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- sales  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card border-3 border-top border-top-primary">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Appointments</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">200</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i
+                                                class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5.86%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end sales  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- new customer  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card border-3 border-top border-top-primary">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Completed</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">160</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i
+                                                class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end new customer  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- visitor  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card border-3 border-top border-top-primary">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Rescheduled</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">25</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <span class="icon-circle-small icon-box-xs text-success bg-success-light"><i
+                                                class="fa fa-fw fa-arrow-up"></i></span><span class="ml-1">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end visitor  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- total orders  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card border-3 border-top border-top-primary">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Total Cancelled</h5>
+                                    <div class="metric-value d-inline-block">
+                                        <h1 class="mb-1">15</h1>
+                                    </div>
+                                    <div class="metric-label d-inline-block float-right text-danger font-weight-bold">
+                                        <span
+                                            class="icon-circle-small icon-box-xs text-danger bg-danger-light bg-danger-light "><i
+                                                class="fa fa-fw fa-arrow-down"></i></span><span class="ml-1">4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end total orders  -->
+                        <!-- ============================================================== -->
+                    </div>
+                    <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- total revenue  -->
+                        <!-- ============================================================== -->
+
+
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- category revenue  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" id="BookAppointment">
+                            <div class="card">
+                                <h5 class="card-header">Book Appointments</h5>
+                                <div class="card-body">
+                                    <div id="c3chart_category" style="height: 420px;">
+                                        <form class="needs-validation" novalidate>
+                                            <div class="form-row">
+                                                <div class="col-md-9 mb-3">
+                                                    <label for="validationCustom08">Name </label>
+                                                    <input type="email" class="form-control" id="validationCustom08"
+                                                        value="Joseph Mkhonto" placeholder="johnMkhonto@gmail.com"
+                                                        required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid name.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 mb-3">
+                                                    <div class="input-group">
+                                                        <label for="inputGroupSelect01">Service</label>
+                                                    </div>
+                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                        <option value="1">Dentist</option>
+                                                        <option value="2" selected>Optician</option>
+                                                        <option value="3"> Out-patient</option>
+                                                        <option value="3"> In-patient</option>
+                                                    </select>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid Service.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 mb-3">
+                                                    <div class="input-group">
+                                                        <label for="inputGroupSelect01">Facility</label>
+                                                    </div>
+                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                        <option value="1">Yeboah Hospital</option>
+                                                        <option value="2" selected>Nyaho Hospital</option>
+                                                        <option value="3"> Emanuel Eye Clinic</option>
+                                                        <option value="3"> Fitz Health Center</option>
+                                                    </select>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid Facility.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 mb-3">
+                                                    <label for="validationCustom08">Date</label>
+                                                    <input type="date" class="form-control" id="validationCustom08"
+                                                        required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid date.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9 mb-3">
+                                                    <label for="validationCustom09">Time</label>
+                                                    <input type="time" class="form-control" id="validationCustom09"
+                                                        required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid time.
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                            
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="col-md-6">
+                                            <button class="btn  btn-warning float-right" type="submit" style="width: 150px;">Book</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end category revenue  -->
+                    <!-- ============================================================== -->
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" id="PremiumPayment">
+                        <div class="card">
+                            <h5 class="card-header">Premium Payment</h5>
+                            <div class="card-body">
+                                <div id="c3chart_category" style="height: 420px;">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-row">
+                                            <div class="col-md-9 mb-3">
+                                                <label for="validationCustom08">Name </label>
+                                                <input type="email" class="form-control" id="validationCustom08"
+                                                    value="Joseph Mkhonto" placeholder="johnMkhonto@gmail.com"
+                                                    required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid name.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 mb-3">
+                                                <div class="input-group">
+                                                    <label for="inputGroupSelect01">Medical Plan</label>
+                                                </div>
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option value="1">Silver</option>
+                                                    <option value="2" selected>Bronze</option>
+                                                    <option value="3"> Gold</option>
+                                                </select>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid plan.
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-9 mb-3">
+                                                <label for="validationCustom08">Premium Amount</label>
+                                                <input type="number" class="form-control" id="validationCustom08"
+                                                    value="5000" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid amount.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 mb-3">
+                                                <div class="input-group">
+                                                    <label for="inputGroupSelect11">Payment Method</label>
+                                                </div>
+                                                <select class="custom-select" id="inputGroupSelect11">
+                                                    <option value="1">Bank Transfer</option>
+                                                    <option value="2" selected>Paypal</option>
+                                                    <option value="3"> Mobile money</option>
+                                                </select>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid plan.
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6">
+                                                <button class="btn  btn-warning float-right" type="submit" style="width: 150px;">Pay</button>
+                                            </div>
+    
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    Copyright © 2020 FUSEM & CAPEIN. All rights reserved. Dashboard by <a
+                        href="https://colorlib.com/wp/">Larry Chege</a>.
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="text-md-right footer-links d-none d-sm-block">
+                        <a href="javascript: void(0);">About</a>
+                        <a href="javascript: void(0);">Support</a>
+                        <a href="javascript: void(0);">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end footer -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+
+    <script>
+        const OpenSignup = () => {
+            window.location.assign("/pages/SignUp.html");
+        }
+        const OpenLogin = () => {
+            window.location.assign("/pages/Dashboard.html");
+        }
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script src="/assets/js/libs.js"></script>
+    <!-- chart chartist js -->
+    <script src="/assets/js/chart.js"></script>
+    <script src="/assets/js/raphael.js"></script>
+    <script src="/assets/js/morris.js"></script>
+    <!-- chart c3 js -->
+    <script src="/assets/js/c3charts/c3.min.js"></script>
+    <script src="/assets/js/c3charts/d3-5.4.0.min.js"></script>
+    <script src="/assets/js/c3charts/C3chartjs.js"></script>
+    <script src="/assets/js/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
