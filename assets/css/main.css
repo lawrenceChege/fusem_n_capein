@@ -2,3 +2,27 @@
     align-content: center;
     width: fit-content;
 }
+.Image {
+    max-width: 60vw;
+    max-height: 40vh;
+    min-width: 300px;
+    min-height: 200px;
+}
+.Image_signup {
+    max-width: 43vw;
+    max-height: 37vh;
+    min-width: 300px;
+    min-height: 200px;
+}
+.Image_forgot {
+    max-width: 50vw;
+    max-height: 40vh;
+    min-width: 300px;
+    min-height: 200px;
+}
+.Image_reset {
+    max-width: 55vw;
+    max-height: 40vh;
+    min-width: 300px;
+    min-height: 200px;
+}
